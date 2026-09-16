@@ -9,12 +9,17 @@ This is a project that serves an API REST with an endpoint that finds fraudulent
 
 ## Execution
 
-To execute, start the server with the symfony console on the project root.
+To execute, first run composer install.
+```bash
+composer install
+```
+
+Then start the server with the symfony console on the project root.
 ```bash
 symfony serve
 ```
 
-Then you can request a POST to the endpoint with the orders. 
+Finally you can request a POST to the endpoint with the orders. 
 ```
 POST /api/fraud-detection HTTP/1.1
 Host: 127.0.0.1:8000
